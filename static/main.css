@@ -1,0 +1,206 @@
+
+* {
+  margin:0px;
+  padding:0px;
+}
+
+body {
+}
+
+button {
+  width: 100px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+img {
+  border: 0px;
+  display:block;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+}
+
+input, button {
+  font-size: 14px;
+}
+
+input[type=text], input[type=password] {
+  height: 24px;
+  padding: 4px;
+}
+
+#header {
+  height: 50px;
+  background-color: #ccc;
+  border: 1px solid #aaa;
+  margin-bottom: 10px;
+}
+
+#content {
+  margin: auto;
+  text-align: center;
+}
+
+.error-message {
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffeeee;
+  border-radius: 5px;
+  border: 1px solid #ff0000;
+  color: red;
+}
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.table {
+  display: table;
+}
+
+.cell {
+  display: table-cell;
+}
+
+.block {
+  display: block;
+}
+
+.iblock {
+  display: inline-block;
+}
+
+.link, a.link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+}
+
+.p {
+  padding-bottom: 10px;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.right {
+  text-align: right;
+}
+
+.margin {
+  margin: 0 auto;
+}
+
+.round {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button {
+  background-color: #dedee5;
+   border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  cursor: pointer;
+  width: 60px;
+  float: left;
+  margin: 0px 5px;
+  text-align: center;
+}
+
+.hand {
+  cursor: pointer;
+}
+
+.float {
+  float: left;
+}
+
+.rfloat {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.space {
+  margin: 18px;
+}
+
+.hspace {
+  margin: 0px 18px;
+}
+
+.x div {
+  padding:4px;
+}
+
+.hide {
+  display: none;
+}
+
+.spinner {
+  position: absolute;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  z-index: 999;
+  background: #fff;
+}
+
+.spinner-msg {
+  text-align: center;
+  font-weight: bold;
+}
+
+.spinner-img {
+  background: url(/static/spinner.gif) no-repeat;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+}
+
+.half {
+  width: 50%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.line {
+  height:1px;
+  width: 50%;
+  background-color: #888;
+  margin: 10px auto;
+}

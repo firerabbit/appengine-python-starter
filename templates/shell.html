@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>Starter App</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <meta property="og:image" content="/static/logo.png"/>
+  <meta name="viewport" content="width=device-width, user-scalable=0" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/static/main.css?v=1" type="text/css" />
+  <script type="text/javascript" src="/static/jquery-3.0.0.min.js"></script>
+</head>
+<body>
+
+{% block header %}
+<div id="header">
+  <div class="rfloat" style="margin: 20px;">
+  <a class="link" href="/">Home</a>
+  {% if user %}
+    | <a class="link" href="/login">Logout</a>
+  {% endif %}
+  </div>
+  <div>Sample App</div>
+</div>
+{% endblock %}
+
+{% if message %}
+<div class="error-message">{{ message }}</div>
+{% endif %}
+
+<div id="content">
+  {% block body %}
+  <div> Dummy content </div>
+  {% endblock %}
+</div>
+
+</body>
+</html>

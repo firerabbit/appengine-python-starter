@@ -1,0 +1,4 @@
+cron:
+- description: run a cron every couple hour
+  url: /snake
+  schedule: every 2 hours

@@ -1,0 +1,13 @@
+download the google appengine sdk:
+https://storage.googleapis.com/appengine-sdks/featured/GoogleAppEngineLauncher-1.9.80.dmg
+
+create a new project:
+admin console: http://localhost:8000
+web server: http://localhost:8085
+interactive console: http://localhost:8000/console
+
+create a user from the console:
+from model import UserProfile
+u = UserProfile.create('foo@bar.com', 'test-password')
+print u.json()
+

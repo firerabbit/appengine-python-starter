@@ -1,0 +1,21 @@
+{% extends 'shell.html' %}
+
+{% block body %}
+
+<h1>{{ welcome_message }}</h1>
+
+{% if user %}
+  <div>You are logged in as {{ user.email }}
+{% else %}
+  <a class="link" href="/signup">Signup</a> | <a class="link" href="/login">Login</a>
+{% endif %}
+
+<div class="line"></div>
+
+{% for u in users %}
+<div>{{ u.email }} joined {{ u.date_created|tz|pretty_date }}</div>
+{% empty %}
+<div>No users found
+{% endfor %}
+
+{% endblock %}

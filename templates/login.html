@@ -1,0 +1,14 @@
+{% extends 'shell.html' %}
+
+{% block body %}
+
+<h1 class="space">Login Page</h1>
+
+<form name="login" method="POST" action="/login">
+  <input type="hidden" name="action" value="login" />
+  <input name="email" type="text" value="{{ email|default:'' }}" placeholder="email" />
+  <input name="password" type="password" value="" placeholder="password" />
+  <input value="Login" type="submit" />
+</form>
+
+{% endblock %}
